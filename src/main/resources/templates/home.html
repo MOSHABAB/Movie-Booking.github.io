@@ -1,0 +1,246 @@
+DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="" th:href="@{/css/home.css}">
+</head>
+
+<body>
+
+	<section class="top-bar">
+		<div class="left-content">
+			<h2 class="title">M4You</h2>
+			<ul class="navigation">
+				<li>Home</li>
+				<li class="active"> Movie</li>
+				<li>Thiyetor</li>
+				<li>Hover</li>
+			</ul>
+		</div>
+		<div class="search">
+			<input class="search-text" type="search"
+				placeholder="search you fav movie">
+			<button class="search-btn">Search</button>
+		</div>
+
+		<h3>
+			<a th:href="@{/register}">Register</a>
+		</h3>
+		<h3>
+			<a th:href="@{/login}">Login</a>
+		</h3>
+
+		<!-- <h3><a th:href="@{/register}">Register</a></h3>
+		<h3><a th:href="@{/login}">Login</a></h3> -->
+
+		<!-- <div class="container">
+            <div>
+          <a href="/login.html">   <button  class="log">Login</button></a> 
+              <button class="reg">Sign up</button>
+             
+            </div>
+          </div> -->
+		<!-- <div class="right-content">
+
+            <img src="/" alt="" class="Cart">
+            <img src="" alt="" class="Help">
+            <div class="">
+                <img src="" alt="menu">
+            </div>
+        </div> -->
+	</section>
+
+
+	<!--main container-->
+	<section class="main-container">
+		<div class="sidebar">
+			<form action="#">
+				<div class="sidebar-groups">
+
+
+					<h3 class="sg-title">Categories</h3>
+					<input type="checkbox" id="adventure" name="adventure"
+						value="adventure"> <label for="adventure">Adventure</label><br>
+
+					<input type="checkbox" id="action" name="Action" value="Action">
+					<label for="Action">Action</label><br> <input type="checkbox"
+						id="animation" name="animation" value="animation"> <label
+						for="animation">Animation</label><br> <input type="checkbox"
+						id="comedy" name="comedy" value="comedy"> <label
+						for="comedy">Comedy</label><br> <input type="checkbox"
+						id="scince" name="scince" value="scince"> <label
+						for="scince">Scince</label><br> <input type="checkbox"
+						id="thriller" name="thriller" value="thriller"> <label
+						for="thriller">thriller</label><br> <input type="checkbox"
+						id="history" name="history" value="history"> <label
+						for="history">History</label><br> <input type="checkbox"
+						id="Documentary" name="Documentary" value="Documentary"> <label
+						for="Documentary">Documentary</label><br> <input
+						type="checkbox" id="fantasy" name="fantasy" value="fantasy">
+					<label for="fantasy">Fantasy</label><br>
+				</div>
+				<div class="sidebar-groups">
+					<h3 class="sg-title">Language</h3>
+
+					<input type="checkbox" id="english" name="english" value="english">
+					<label for="english">English</label><br> <input
+						type="checkbox" id="urdu" name="urdu" value="urdu"> <label
+						for="urdu">Urdu</label><br> <input type="checkbox" id="Hindi"
+						name="Hindi" value="Hindi"> <label for="Hindi">Hindi</label><br>
+				</div>
+				<div class="sidebar-groups">
+					<h3 class="sg-title">Time</h3>
+					<input type="radio" id="morning" name="time" value="morning">
+					<label for="morning">Morning</label><br> <input type="radio"
+						id="night" name="time" value="night"> <label for="night">Night</label>
+
+				</div>
+				<div class="sidebar-groups">
+					<a th:href="@{/login.html}" class="btn-1 btn">Apply Filters</a>
+				</div>
+			</form>
+		</div>
+		
+		<div class="movies-container">
+			<div class="upcoming-img-box">
+				<img src="" th:src="@{/img/Pathaan-01.jpg}" alt="">
+				<p class="upcoming-title">Upcoming Movie</p>
+				<div class="buttons">
+					<a href="" th:href="@{/login.html}" class="btn">Book Now</a> <a
+						href="" th:href="@{/login.html}" class="btn">Play Trailer </a>
+				</div>
+
+			</div>
+		
+<div class="current-movie">
+				<!-- /hh -->
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/vikrmovie.jpg}" alt="">
+					</div>
+					<h3 class="movie-title">Vikarm</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">20$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/RRR.webp}" alt="">
+					</div>
+					<h3 class="movie-title">RRR</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">25$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/topgun move.webp}" alt="">
+					</div>
+					<h3 class="movie-title">Top Gun</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">15$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/RRR.webp}" alt="">
+					</div>
+					<h3 class="movie-title">Misri</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">25$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/11.jpg}" alt="">
+					</div>
+					<h3 class="movie-title">Kics Ass2</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">25$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/10.jpg}" alt="">
+					</div>
+					<h3 class="movie-title">Open Sky</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">25$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+
+				<div class="current-movie">
+
+					<div class="cm-img-box">
+
+						<img src="" th:src="@{/img/1.jpeg}" alt="">
+					</div>
+					<h3 class="movie-title">Red-Wine</h3>
+					<p class="screen-name">Screen:Plainum</p>
+					<div class="booking">
+						<h2 class="price">25$</h2>
+						<a th:href="@{/login.html}" class="btn">Buy Tickets</a>
+					</div>
+				</div>
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+	</section>
+
+
+</body>
+
+</html>

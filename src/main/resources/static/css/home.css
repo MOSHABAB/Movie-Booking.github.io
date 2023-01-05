@@ -1,0 +1,276 @@
+@charset "ISO-8859-1";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'joan' serif;
+}
+body{
+    background-color: #1e1f26;
+    display: grid;
+    grid-template-columns: 1450px;
+    justify-content: space-evenly;
+}
+.a{
+    text-decoration: none;
+    color: #adadad;
+}
+.btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: #38c6cd;
+    /* border-radius: 1rem; */
+    color: #1e1f26;
+    transition: .3s;
+
+}
+.btn:hover{
+    background-color: rgba(104, 85, 224, 1);
+
+}
+.btn-1{
+    width: 100px;
+    text-align: center;
+}
+
+.top-bar{
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+.left-content,.right-content
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+  
+  
+  
+  button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+  
+  .reg {
+    /* color: white; */
+    background-color: #cd8c38;
+  }
+  
+  .log {
+    /* color: rgb(104, 85, 224); */
+    background-color: #cd8c38;
+    /* border: 1px solid rgba(104, 85, 224, 1); */
+  }
+  
+  button:hover {
+    color: white;
+  
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+  }
+
+
+
+.title{
+    margin-right: 3rem;
+    color: #cd8c38;
+}
+.title:hover{
+    
+    color:  beige;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    font-size: large;
+   color: #cd8c38;
+   text-align: center ;
+}
+.navigation li{
+    margin-right:1.5rem;
+   
+
+}
+
+.navigation li:hover{
+  color: beige;
+
+}
+.active{
+   background-color: #cd8c38;  
+}
+.search-btn{
+    
+  background-color:#cd8c38;;
+}
+.search-btn:hover{
+    color:  beige;
+  
+}
+.search-text{
+   height: 35px;
+   width: 245px;
+   
+    
+    
+   
+  
+}
+
+.filter,.cart,.helo,.menu{
+     
+    position: relative;
+    width: 20px;
+    height: 20px;
+    }
+    .filter,.cart,.helo{
+        margin-right: 1rem;
+    }
+    .menu{
+        margin-right: .8rem;
+    }
+    .filter,.menu{
+        display: none;
+    }
+ 
+.profile-img-box{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+
+
+}
+.img{
+    position: relative;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.main-container{
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+.sidebar{
+    background: linear-gradient(45deg,rgba(255,255,255,0.5),rgba(205,140,56,.15));
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+
+}
+.sidebar-groups{
+margin-bottom: 1rem ;
+}
+.sg-title{
+    margin-bottom: .5rem;
+    color: #fff;
+}
+input{
+    margin-bottom: .6rem;
+}
+input[type=checkbox]:checked{
+    accent-color: #cd8c38;
+}
+
+input[type=checkbox]:checked{
+    accent-color: #cd8c38;
+}
+label{
+    margin-left: .5rem;
+}
+
+
+
+.upcoming-img-box{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom:1.5rem ;
+}
+.upcoming-title{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #cd8c38;
+   background-color: #1e1f26;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #cd8c38;
+    font-weight: 500;
+}
+.buttons{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+.btn-alt{
+background-color:#1e2f26 ;
+color: #cd8c38;
+border: 1px solid #cd8c38;
+margin-top: 1rem;
+
+}
+.btn-alt:hover{
+    color: #1e1f26;
+    background-color: #cd8c38;
+}
+
+.movie-container{
+    padding-bottom: 2rem;
+}
+
+.current-movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.current-movie{
+    background: linear-gradient(45deg,rgba(255,255,255,0.5),rgba(205,140,56,.15));
+    padding: 1rem;
+    border-radius: .5rem;
+
+}
+.cm-img-box{
+    position: relative;
+    height: 300px;
+    width: 350px;
+   margin-bottom: 1rem;
+   border-radius: .5rem;
+   overflow: hidden;
+
+}
+.movie-title{
+    color: #fff;
+    margin-bottom:1rem ;
+}
+.booking{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1rem ;
+}
+.price{
+    color: #cd8c38;
+}

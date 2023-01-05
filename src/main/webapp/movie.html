@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container">
+   <div class ="row">
+   <h1>List Movies</h1>
+   </div>
+   <div class = "row">
+   <div class= "col-lg-3">
+   
+   <a th:herf = "@{/movies/new}" class= "btn btn-primary btn-sm mb-3">Add Movie</a>
+   </div>
+   </div>
+  
+   <table class="table table-bordered">
+   <thead class="table-dark">
+   
+   <tr>
+   <th> Movie Id</th>
+     <th> Movie Name</th>
+       <th> Movie Price</th>
+            <th> Movie Language</th>
+            <th> Movie Category</th>
+             <th> Action</th>
+   
+   </tr>
+   </thead>
+   <tbody>
+   
+   <tr th:each="movie:${movies}">
+   <td th:text="${movie.moviename"></td> 
+      <td th:text="${movie.movietype"></td>
+         <td th:text="${movie.movielanguage"></td>
+            <td th:text="${movie.moviecategory"></td>
+   </tr>
+   
+   </tbody>
+   </table>
+   
+   </div>
+
+
+</body>
+</html>
